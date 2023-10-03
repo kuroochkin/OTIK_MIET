@@ -1,5 +1,6 @@
 ﻿namespace OTIK_MIET;
 
+[Serializable]
 public class Archive
 {
 	public ArchiveHeader Header { get; set; }
