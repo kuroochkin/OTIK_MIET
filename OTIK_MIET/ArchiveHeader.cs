@@ -1,5 +1,6 @@
 ﻿namespace OTIK_MIET;
 
+[Serializable]
 public class ArchiveHeader
 {
 	public string Signature { get; set; } // Сигнатура
