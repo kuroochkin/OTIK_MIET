@@ -97,7 +97,7 @@ while (!exitMenu)
 			break;
 
 		case "5":
-			Console.WriteLine("Введите название файла, из которого хотите считать информацию в байтах:");
+			Console.WriteLine("Введите название файла, из которого хотите считать информацию текстом:");
 			string _filename2 = Console.ReadLine();
 			var _file2 = archive.Files.FirstOrDefault(file => file.FileName == _filename2);
 			if (_file2 is null)
@@ -119,12 +119,12 @@ while (!exitMenu)
 			builder.AppendLine(archiveHeader.Version.ToString());
 			foreach (var item in archiveHeader.CompressionAlgorithms)
 			{
-				builder.Append(item + " ");
+				builder.Append(item.ToString() + " ");
 			}
 			builder.AppendLine();
 			foreach (var item in archiveHeader.ErrorProtectionAlgorithms)
 			{
-				builder.Append(item + " ");
+				builder.Append(item.ToString() + " ");
 			}
 			builder.AppendLine();
 			builder.Append(archiveHeader.OriginalFileSize);
