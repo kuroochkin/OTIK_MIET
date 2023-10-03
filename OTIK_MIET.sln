@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTIK_MIET", "OTIK_MIET\OTIK_MIET.csproj", "{11AB3690-14EA-40DD-879F-C213722CC165}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11AB3690-14EA-40DD-879F-C213722CC165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11AB3690-14EA-40DD-879F-C213722CC165}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11AB3690-14EA-40DD-879F-C213722CC165}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11AB3690-14EA-40DD-879F-C213722CC165}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B04A0DF3-0D42-4B92-BE01-8EEEF7F6DECE}
+	EndGlobalSection
+EndGlobal
