@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReaderFile", "ReaderFile\Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReaderFileByte", "ReaderFileByte\ReaderFileByte.csproj", "{C75A06A3-771F-44F7-A3B1-8CAA74562112}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OctetAnalysis", "OctetAnalysis\OctetAnalysis.csproj", "{BC963576-8FBD-4895-9E70-252EFCA74B59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{C75A06A3-771F-44F7-A3B1-8CAA74562112}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C75A06A3-771F-44F7-A3B1-8CAA74562112}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C75A06A3-771F-44F7-A3B1-8CAA74562112}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC963576-8FBD-4895-9E70-252EFCA74B59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC963576-8FBD-4895-9E70-252EFCA74B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC963576-8FBD-4895-9E70-252EFCA74B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC963576-8FBD-4895-9E70-252EFCA74B59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{8A2EF2ED-6E5A-441D-B10E-9308994FFBFA} = {3914BE67-48AB-4C07-97F5-BEF4C7F35570}
 		{19A3ADCB-0989-4E24-B8CD-AAB0737A7B0A} = {444D9708-8278-479C-A411-E4DE11D7F53F}
 		{C75A06A3-771F-44F7-A3B1-8CAA74562112} = {444D9708-8278-479C-A411-E4DE11D7F53F}
+		{BC963576-8FBD-4895-9E70-252EFCA74B59} = {444D9708-8278-479C-A411-E4DE11D7F53F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B04A0DF3-0D42-4B92-BE01-8EEEF7F6DECE}

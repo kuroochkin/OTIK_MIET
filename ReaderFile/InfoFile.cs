@@ -63,7 +63,5 @@ public class InfoFile
 		Console.WriteLine($"\nСуммарное количество информации в битах: {TotalInformation}");
 		Console.WriteLine($"Суммарное количество информации в байтах: {totalInformationBytes}");
 	}
-
-
 }
 

@@ -48,6 +48,28 @@ public class InfoFile
 		PrintInfo.PrintCharacterTable(sortedByFrequency);
 	}
 
+	public void FrequencyCoutingForAnalysis()
+	{
+		byte[] content = File.ReadAllBytes(FilePath);
+
+		foreach (byte c in content)
+		{
+			if (byteFrequency.ContainsKey(c))
+				byteFrequency[c]++;
+			else
+				byteFrequency[c] = 1;
+		}
+
+		var sortedAlphabetically = byteFrequency.OrderBy(pair => pair.Key).Take(20);
+		var sortedByFrequency = byteFrequency.OrderByDescending(pair => pair.Value).Take(20);
+
+		Console.WriteLine("Таблица символов (отсортированная по алфавиту):");
+		PrintInfo.PrintCharacterTable(sortedAlphabetically);
+
+		Console.WriteLine("\nТаблица символов (отсортированная по убыванию частоты):");
+		PrintInfo.PrintCharacterTable(sortedByFrequency);
+	}
+
 	// Расчет вероятностей, количества информации и суммарной информации
 	public void InformationCouting()
 	{

@@ -6,7 +6,6 @@ string filePath = "C:\\Users\\pin11\\source\\repos\\OTIK_MIET\\ReaderFile\\text1
 
 var file = new InfoFile(filePath);
 
-
 if (File.Exists(filePath))
 {
 	// Подсчет символов
