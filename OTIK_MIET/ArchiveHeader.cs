@@ -13,12 +13,12 @@ public class ArchiveHeader
 
 	public ArchiveHeader()
 	{
-		Signature = "ARCV";
+		Signature = "arc";
 		Version = 1;
 		CompressionAlgorithm = 0;
 		ErrorProtectionAlgorithm = 0;
-		CompressionAlgorithms = new List<int> { 1, 2, 3 };
-		ErrorProtectionAlgorithms = new List<int> { 1, 2, 3 };
+		CompressionAlgorithms = new List<int> { 0, 1, 2, 3 };
+		ErrorProtectionAlgorithms = new List<int> {0, 1, 2, 3 };
 		OriginalFileSize = 1024;
 	}
 }

@@ -5,6 +5,7 @@ namespace OTIK_MIET;
 [Serializable]
 public class ArchiveData
 {
+	public string Name { get; set; }
 	public ArchiveHeader Header { get; set; }
 	public List<ArchiveFile> Files { get; set; } // Список файлов
 	public byte[] EncodedData { get; set; } // Содержимое архива

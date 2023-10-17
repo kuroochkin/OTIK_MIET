@@ -1,6 +1,7 @@
 ﻿using OTIK_MIET;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Runtime.Serialization;
+using System.Xml.Linq;
 
 namespace Codek;
 
@@ -16,17 +17,22 @@ public class Coder
 	}
 
 	public void CreateArchiveFromFile()
-	{
+	{ 
+		string[] parts = FileX.FileName.Split('.');
+
 		// Создаем архив
 		Archive = new ArchiveData();
 
-		var connectionString = "C:\\Users\\pin11\\source\\repos\\OTIK_MIET\\Codek\\coder.arc";
+		Archive.Name = $"{parts[0]}.{Archive.Header.Signature}";
+		Archive.EncodedData = new byte[] { };
+
+		var connectionString = $"C:\\Users\\pin11\\source\\repos\\OTIK_MIET\\Codek\\{Archive.Name}";
 
 		byte[] archiveBytes;
 		using (MemoryStream stream = new MemoryStream())
 		{
 			IFormatter formatter = new BinaryFormatter();
-			formatter.Serialize(stream, Archive);
+			formatter.Serialize(stream, Archive.EncodedData);
 			archiveBytes = stream.ToArray();
 			File.WriteAllBytes(connectionString, archiveBytes);
 		}
