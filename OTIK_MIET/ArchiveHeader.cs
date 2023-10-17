@@ -1,20 +1,25 @@
 ﻿namespace OTIK_MIET;
 
+[Serializable]
 public class ArchiveHeader
 {
 	public string Signature { get; set; } // Сигнатура
 	public int Version { get; set; } // Версия формата
-	public int CompressionAlgorithmCode { get; set; } // Код алгоритма сжатия
-	public int ErrorProtectionCode { get; set; }  // Код алгоритма защиты
-	public long OriginalFileSize { get; set; }  // Исходная длина файла (байты)
+	public List<int> CompressionAlgorithms { get; set; } // Коды алгоритмов сжатия
+	public List<int> ErrorProtectionAlgorithms { get; set; } // Коды алгоритмов защиты от помех
+	public int CompressionAlgorithm { get; set; } // Выбранный код сжатия
+	public int ErrorProtectionAlgorithm { get; set; } // Выбранный код защиты
+	public long OriginalFileSize { get; set; } // Исходная длина файла (в байтах)
 
-	// Инициализация по умолчанию
 	public ArchiveHeader()
 	{
-		Signature = "ARCV";
+		Signature = "arc";
 		Version = 1;
-		CompressionAlgorithmCode = 1;
-		ErrorProtectionCode = 2;
+		CompressionAlgorithm = 0;
+		ErrorProtectionAlgorithm = 0;
+		CompressionAlgorithms = new List<int> { 0, 1, 2, 3 };
+		ErrorProtectionAlgorithms = new List<int> {0, 1, 2, 3 };
 		OriginalFileSize = 1024;
 	}
 }
+
