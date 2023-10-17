@@ -4,8 +4,10 @@ string filePath1 = "C:\\Users\\pin11\\source\\repos\\OTIK_MIET\\OctetAnalysis\\�
 string filePath2 = "C:\\Users\\pin11\\source\\repos\\OTIK_MIET\\OctetAnalysis\\Льюис Кэрролл. Охота на Снарка — Кружков — iso.txt";
 string filePath3 = "C:\\Users\\pin11\\source\\repos\\OTIK_MIET\\OctetAnalysis\\Льюис Кэрролл. Охота на Снарка — Кружков — koi8r.txt";
 
+// Список адресов файлов
 List<string> filespaths = new() { filePath1, filePath2, filePath3 };
 
+// Массив всех байтов из файлов
 List<byte> bytes = new();
 
 Dictionary<byte, int> byteFrequency = new Dictionary<byte, int>();
